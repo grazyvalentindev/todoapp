@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+body {
+    background: url("img/bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    background-color: rgba(43, 109, 163, 0.274);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px !important; /* Largura fixa máxima */
+    width: 90%; /* Largura responsiva até atingir max-width */
+    margin: 0 auto; /* Centralização */
+    min-height: 500px; /* Altura mínima para parecer um bloco de notas */
+}
+
+
+h1 {
+    color: #333;
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.input-task {
+    border: none;
+}
+
+.button-add-task {
+    font-weight: 700;
+}
+
+.list-tasks {
+    margin-top: 20px;
+}
+
+.list-group-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fcf9f9;
+    color: #092d8fa2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.list-group-item.done {
+    background-color: #1d1a1a;
+    text-decoration: line-through;
+}
+
+.list-group-item span.text-muted {
+    text-decoration: line-through;
+}
+
+.list-group-item img {
+    cursor: pointer;
+    width: 20px; /* Ajustar o tamanho dos ícones */
+    height: 20px;
+}
+
+.btn-custom {
+    background-color: #87CEEB; /* Azul claro */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #5F9EA0; /* Um tom mais escuro para o hover */
+    color: white;
+}
+
+/* Ajuste no espaçamento entre os botões */
+.mr-2 {
+    margin-right: 8px;
+}
